@@ -6,29 +6,46 @@
     <title>Vince Rivers</title>
     <style>
         body {
-            background: linear-gradient(#001a4d, #003366);
+            background-color: #0a1929;
+            color: #b0b0b0;
             font-family: 'Futura', sans-serif;
-            color: white;
+            margin: 0;
+            padding: 0;
         }
         header {
             text-align: center;
-            margin: 20px 0;
-            font-size: 2em;
+            padding: 20px;
         }
-        /* Additional styles for tabs can be added here */
+        nav {
+            display: flex;
+            justify-content: center;
+            margin: 20px 0;
+        }
+        nav a {
+            color: #b0b0b0;
+            text-decoration: none;
+            margin: 0 15px;
+            padding: 10px 15px;
+            border: 1px solid transparent;
+        }
+        nav a:hover {
+            border-bottom: 1px solid #b0b0b0;
+        }
     </style>
 </head>
 <body>
-    <header>Vince Rivers</header>
+    <header>
+        <h1>Vince Rivers</h1>
+    </header>
     <nav>
-        <ul>
-            <li><a href="#home">Home</a></li>
-            <li><a href="#projects">Projects</a></li>
-            <li><a href="#theatre">Theatre</a></li>
-            <li><a href="#film">Film</a></li>
-            <li><a href="#contact">Contact</a></li>
-        </ul>
+        <a href="#home">Home</a>
+        <a href="#projects">Projects</a>
+        <a href="#theatre">Theatre</a>
+        <a href="#film">Film</a>
+        <a href="#contact">Contact</a>
     </nav>
-    <!-- Existing functionality for tabs goes here -->
+    <main>
+        <h2>Welcome to my website!</h2>
+    </main>
 </body>
 </html>
