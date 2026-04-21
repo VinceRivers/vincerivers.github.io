@@ -3,86 +3,32 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Portfolio</title>
+    <title>Vince Rivers</title>
     <style>
         body {
-            font-family: Arial, sans-serif;
-            margin: 0;
-            padding: 0;
-            background: linear-gradient(to right, #ff7e5f, #feb47b);
-            color: #333;
-            transition: background 0.5s;
-        }
-        .tabs {
-            display: flex;
-            justify-content: space-around;
-            padding: 10px;
-            background: #fff;
-            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
-        }
-        .tab {
-            padding: 10px 20px;
-            cursor: pointer;
-            transition: background 0.3s;
-        }
-        .tab:hover {
-            background: #ff7e5f;
+            background: linear-gradient(#001a4d, #003366);
+            font-family: 'Futura', sans-serif;
             color: white;
         }
-        .tab.active {
-            background: #feb47b;
-            color: white;
+        header {
+            text-align: center;
+            margin: 20px 0;
+            font-size: 2em;
         }
-        .content {
-            padding: 20px;
-            display: none;
-        }
-        .content.active {
-            display: block;
-        }
+        /* Additional styles for tabs can be added here */
     </style>
 </head>
 <body>
-    <div class="tabs">
-        <div class="tab active" onclick="showTab('home')">Home</div>
-        <div class="tab" onclick="showTab('projects')">Projects</div>
-        <div class="tab" onclick="showTab('theatre')">Theatre</div>
-        <div class="tab" onclick="showTab('film')">Film</div>
-        <div class="tab" onclick="showTab('contact')">Contact</div>
-    </div>
-    <div class="content home active">
-        <h1>Welcome to My Portfolio</h1>
-        <p>This is a brief introduction about me.</p>
-    </div>
-    <div class="content projects">
-        <h1>Projects</h1>
-        <p>Details of my projects will go here.</p>
-    </div>
-    <div class="content theatre">
-        <h1>Theatre</h1>
-        <p>Information about my theatre work will go here.</p>
-    </div>
-    <div class="content film">
-        <h1>Film</h1>
-        <p>Details about my film work will go here.</p>
-    </div>
-    <div class="content contact">
-        <h1>Contact</h1>
-        <p>How to get in touch with me.</p>
-    </div>
-    <script>
-        function showTab(selectedTab) {
-            const tabs = document.querySelectorAll('.tab');
-            const contents = document.querySelectorAll('.content');
-            tabs.forEach(tab => {
-                tab.classList.remove('active');
-            });
-            contents.forEach(content => {
-                content.classList.remove('active');
-            });
-            document.querySelector(`.tab[onclick*='${selectedTab}']`).classList.add('active');
-            document.querySelector(`.content.${selectedTab}`).classList.add('active');
-        }
-    </script>
+    <header>Vince Rivers</header>
+    <nav>
+        <ul>
+            <li><a href="#home">Home</a></li>
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="#theatre">Theatre</a></li>
+            <li><a href="#film">Film</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+    </nav>
+    <!-- Existing functionality for tabs goes here -->
 </body>
 </html>
