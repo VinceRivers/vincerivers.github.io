@@ -4,26 +4,80 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Vince Rivers Portfolio</title>
-    <link rel="stylesheet" href="styles.css">
+    <style>
+        body {
+            background: linear-gradient(to right, #ff7e5f, #feb47b);
+            font-family: 'Arial', sans-serif;
+        }
+        nav {
+            background: rgba(255, 255, 255, 0.8);
+            padding: 10px;
+            text-align: center;
+        }
+        nav a {
+            margin: 0 15px;
+            text-decoration: none;
+            color: #333;
+        }
+        .directory {
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+        }
+        .card {
+            background: #fff;
+            margin: 10px;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+        }
+        .music-player { 
+            margin: 20px auto;
+            text-align: center;
+        }
+    </style>
 </head>
 <body>
-    <header>
-        <h1>Vince Rivers</h1>
-        <nav>
-            <ul>
-                <li><a href="index.html">Home</a></li>
-                <li><a href="about.html">About</a></li>
-                <li><a href="works.html">Works</a></li>
-                <li><a href="contact.html">Contact</a></li>
-            </ul>
-        </nav>
-    </header>
-    <main>
-        <h2>Welcome to my portfolio!</h2>
-        <p>Explore my work and get to know more about me.</p>
-    </main>
-    <footer>
-        <p>&copy; 2026 Vince Rivers. All rights reserved.</p>
-    </footer>
+    <nav>
+        <a href="#about">About</a>
+        <a href="#portfolio">Portfolio</a>
+        <a href="#contact">Contact</a>
+    </nav>
+
+    <section id="about">
+        <h1>Welcome to Vince Rivers' Portfolio</h1>
+        <p>This is my multi-page portfolio showcasing my work and projects.</p>
+    </section>
+
+    <section id="portfolio">
+        <h2>My Work</h2>
+        <div class="directory">
+            <div class="card">
+                <h3>Project 1</h3>
+                <p>Description of project 1.</p>
+            </div>
+            <div class="card">
+                <h3>Project 2</h3>
+                <p>Description of project 2.</p>
+            </div>
+            <div class="card">
+                <h3>Project 3</h3>
+                <p>Description of project 3.</p>
+            </div>
+        </div>
+    </section>
+
+    <section id="contact">
+        <h2>Contact Me</h2>
+        <p>Email: vincerivers@example.com</p>
+    </section>
+
+    <div class="music-player">
+        <h2>My Music</h2>
+        <audio controls>
+            <source src="path/to/your/music.mp3" type="audio/mpeg">
+            Your browser does not support the audio element.
+        </audio>
+    </div>
 </body>
 </html>
